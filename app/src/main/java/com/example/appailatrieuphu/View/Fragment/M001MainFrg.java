@@ -1,8 +1,8 @@
-package com.example.appailatrieuphu.Base.Fragment;
+package com.example.appailatrieuphu.View.Fragment;
 
 import android.view.View;
 
-import com.example.appailatrieuphu.Base.Act.MainActivity;
+import com.example.appailatrieuphu.View.Act.MainActivity;
 import com.example.appailatrieuphu.MediaManager;
 import com.example.appailatrieuphu.R;
 import com.example.appailatrieuphu.databinding.M001MainFrgBinding;

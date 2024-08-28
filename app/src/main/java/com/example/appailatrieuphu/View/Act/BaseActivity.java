@@ -1,4 +1,4 @@
-package com.example.appailatrieuphu.Base.Act;
+package com.example.appailatrieuphu.View.Act;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewbinding.ViewBinding;
 
-import com.example.appailatrieuphu.Base.Fragment.BaseFragment;
-import com.example.appailatrieuphu.Base.OnMainCallBack;
+import com.example.appailatrieuphu.View.Fragment.BaseFragment;
+import com.example.appailatrieuphu.View.OnMainCallBack;
 import com.example.appailatrieuphu.R;
 
 import java.lang.reflect.Constructor;

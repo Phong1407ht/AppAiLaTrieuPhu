@@ -1,20 +1,15 @@
-package com.example.appailatrieuphu.Base.Act;
+package com.example.appailatrieuphu.View.Act;
 
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.appailatrieuphu.App;
-import com.example.appailatrieuphu.Base.Fragment.M001MainFrg;
-import com.example.appailatrieuphu.Base.OnMainCallBack;
+import com.example.appailatrieuphu.View.Fragment.M001MainFrg;
+import com.example.appailatrieuphu.View.OnMainCallBack;
 import com.example.appailatrieuphu.MediaManager;
 import com.example.appailatrieuphu.R;
 import com.example.appailatrieuphu.databinding.ActivityMainBinding;
-import com.example.appailatrieuphu.db.Entities.Question;
 import com.example.appailatrieuphu.viewmodel.MainViewModel;
-
-import java.util.List;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
     public static final String TAG = MainActivity.class.getName();
@@ -32,9 +27,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
     private void initDB() {
         new Thread(() -> {
             try {
-                List<Question> listQuestion = App.getInstance().getDb().getDAO().getListQuestion();
-                Log.i(TAG, "listQuestion:" + listQuestion.size());
-                runOnUI((data, key) -> gotoMainScreen(listQuestion));
+                runOnUI((data, key) -> gotoMainScreen());
             } catch (Exception e) {
                 runOnUI((data, key) -> showAlert());
             }
@@ -53,9 +46,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
         MediaManager.getInstance().playSong();
     }
 
-    private void gotoMainScreen(List<Question> listQuestion) {
-        App.getInstance().getStorage().setListQuestion(listQuestion);
-        Log.i(TAG,listQuestion.toString());
+    private void gotoMainScreen() {
         new Handler().postDelayed(() -> {
             binding.ivLogo.setVisibility(View.GONE);
             binding.progressLoading.setVisibility(View.GONE);

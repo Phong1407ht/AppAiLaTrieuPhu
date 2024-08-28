@@ -210,6 +210,6 @@
         android:textAllCaps="false"
         android:text="@string/hide"
         android:backgroundTint="@color/colorPurple"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginRight="15dp"/>
 </FrameLayout>

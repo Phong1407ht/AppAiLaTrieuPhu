@@ -1,4 +1,4 @@
-package com.example.appailatrieuphu.Base.Fragment;
+package com.example.appailatrieuphu.View.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewbinding.ViewBinding;
 
-import com.example.appailatrieuphu.Base.OnMainCallBack;
+import com.example.appailatrieuphu.View.OnMainCallBack;
 
 public abstract class BaseFragment<V extends ViewBinding, B extends ViewModel> extends Fragment implements View.OnClickListener {
     protected V binding;

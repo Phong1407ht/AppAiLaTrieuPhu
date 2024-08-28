@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_home"
     android:orientation="vertical"
-    tools:context=".Base.Act.MainActivity">
+    tools:context=".View.Act.MainActivity">
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="wrap_content"

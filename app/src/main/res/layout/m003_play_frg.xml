@@ -101,7 +101,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/ic_choose_r"
                 android:gravity="center"
-                android:text="Choose b"
+                android:text="Choose d"
                 android:textColor="@color/white" />
         </TableRow>
     </LinearLayout>

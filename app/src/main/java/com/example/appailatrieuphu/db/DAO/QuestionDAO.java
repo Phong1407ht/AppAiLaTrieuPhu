@@ -1,5 +1,6 @@
 package com.example.appailatrieuphu.db.DAO;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Query;
 
@@ -25,7 +26,7 @@ public interface QuestionDAO {
             "UNION SELECT * FROM (SELECT * FROM QUESTION WHERE level = 14 ORDER BY RANDOM() LIMIT 1)\n"+
             "UNION SELECT * FROM (SELECT * FROM QUESTION WHERE level = 15 ORDER BY RANDOM() LIMIT 1)\n"+
             ")ORDER BY level ASC")
-    List<Question> getListQuestion();
+    LiveData<List<Question>> getListQuestion();
 
     @Query("SELECT * FROM Question WHERE level = :level ORDER BY RANDOM() LIMIT 1")
     List<Question> getQuestionByLevel(int level);

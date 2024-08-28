@@ -1,4 +1,4 @@
-package com.example.appailatrieuphu.Base.Fragment;
+package com.example.appailatrieuphu.View.Fragment;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.appailatrieuphu.Base.OnMainCallBack;
+import com.example.appailatrieuphu.View.OnMainCallBack;
 import com.example.appailatrieuphu.R;
 
 public class InformReadyDialog extends Dialog {

@@ -24,6 +24,70 @@ public class Question {
     public String caseC;
     @ColumnInfo(name = "cased")
     public String caseD;
+
+    public String getTrueCase() {return trueCase;}
+
+    public void setTrueCase(String trueCase) {
+        this.trueCase = trueCase;
+    }
+
+    @NotNull
+    public String getId() {
+        return id;
+    }
+
+    public void setId(@NotNull String id) {
+        this.id = id;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public String getCaseA() {
+        return caseA;
+    }
+
+    public void setCaseA(String caseA) {
+        this.caseA = caseA;
+    }
+
+    public String getCaseB() {
+        return caseB;
+    }
+
+    public void setCaseB(String caseB) {
+        this.caseB = caseB;
+    }
+
+    public String getCaseC() {
+        return caseC;
+    }
+
+    public void setCaseC(String caseC) {
+        this.caseC = caseC;
+    }
+
+    public String getCaseD() {
+        return caseD;
+    }
+
+    public void setCaseD(String caseD) {
+        this.caseD = caseD;
+    }
+
     @ColumnInfo(name = "truecase")
     public String trueCase;
 

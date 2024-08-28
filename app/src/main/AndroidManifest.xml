@@ -17,7 +17,7 @@
         tools:targetApi="34"
         tools:ignore="ObsoleteSdkInt">
         <activity
-            android:name=".Base.Act.MainActivity"
+            android:name=".View.Act.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
