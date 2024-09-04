@@ -9,29 +9,13 @@ import com.example.appailatrieuphu.db.Entities.Question;
 import java.util.List;
 
 public class M003PlayVM extends BaseViewModel {
-    private final MutableLiveData<Question> ansA = new MutableLiveData<>();
-    private final MutableLiveData<Question> ansB = new MutableLiveData<>();
-    private final MutableLiveData<Question> ansC = new MutableLiveData<>();
-    private final MutableLiveData<Question> ansD = new MutableLiveData<>();
+    private final MutableLiveData<Integer> money = new MutableLiveData<>();
     private final MutableLiveData<Integer> time = new MutableLiveData<>(30);
-    private final MutableLiveData<Question> question = new MutableLiveData<>();
-    private final MutableLiveData<Question> level = new MutableLiveData<>();
     private LiveData<List<Question>> listQuestion;
     private int answer;
     private Thread thread;
 
-    public MutableLiveData<Question> getAnsA() {return ansA;}
-
-    public MutableLiveData<Question> getAnsB() {return ansB;}
-
-    public MutableLiveData<Question> getAnsC() {return ansC;}
-
-    public MutableLiveData<Question> getAnsD() {return ansD;}
-
-    public MutableLiveData<Question> getLevel(){ return level;}
-
-
-    public MutableLiveData<Question> getQuestion() {return question;}
+    public MutableLiveData<Integer> getMoney() {return money;}
 
     public MutableLiveData<Integer> getTime() {return time;}
 

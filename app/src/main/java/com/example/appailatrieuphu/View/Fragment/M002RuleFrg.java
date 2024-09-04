@@ -6,6 +6,8 @@ import android.view.animation.AnimationUtils;
 import com.example.appailatrieuphu.View.Act.MainActivity;
 import com.example.appailatrieuphu.MediaManager;
 import com.example.appailatrieuphu.R;
+import com.example.appailatrieuphu.View.Dialog.InformReadyDialog;
+import com.example.appailatrieuphu.View.OnMainCallBack;
 import com.example.appailatrieuphu.databinding.M002RuleFrgBinding;
 import com.example.appailatrieuphu.viewmodel.M002MainViewModel;
 
@@ -45,7 +47,7 @@ public class M002RuleFrg extends BaseFragment<M002RuleFrgBinding, M002MainViewMo
                 doBack();
             } else if (key.equals(InformReadyDialog.KEY_READY)) {
                 doReady();
-                MediaManager.getInstance().playGame(R.raw.song_ready,mediaPlayer -> {
+                MediaManager.getInstance().playGame(R.raw.song_ready, mediaPlayer -> {
                     MainActivity act = (MainActivity) mContext;
                     act.showFragment(M003PlayFrg.TAG, null, true);
                 });

@@ -1,4 +1,4 @@
-package com.example.appailatrieuphu.View.Fragment;
+package com.example.appailatrieuphu.View.Dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -24,7 +24,9 @@ public class InformReadyDialog extends Dialog {
     private void initViews() {
         setCancelable(false);
         setCanceledOnTouchOutside(false);
-        findViewById(R.id.bt_ready).setOnClickListener(view -> doReady());
+        findViewById(R.id.bt_ready).setOnClickListener(view -> {
+            doReady();
+        });
         findViewById(R.id.bt_back).setOnClickListener(view -> doBack());
     }
 
