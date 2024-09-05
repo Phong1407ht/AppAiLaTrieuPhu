@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Xin chào !!! "
+        android:padding="10dp"
+        android:background="@color/colorPurple"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPurple"
+        android:layout_gravity="center">
+    <EditText
+        android:id="@+id/edt_player_name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="User name"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:hint="Vui lòng nhập tên người chơi"
+        android:alpha="0.3"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/material_dynamic_primary10"
+        android:textColorHint="@color/material_dynamic_primary10"
+        android:textSize="18sp" />
+</FrameLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@color/colorDark"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Xác nhận"
+            android:backgroundTint="@color/colorPurple"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Quay lại"
+            android:backgroundTint="@color/colorPurple"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+</LinearLayout>
