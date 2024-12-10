@@ -29,7 +29,6 @@ public abstract class BaseActivity<V extends ViewBinding, B extends ViewModel> e
         viewmodel = new ViewModelProvider(this).get(initViewModel());
         setContentView(v);
         initView();
-
     }
 
     protected abstract Class<B> initViewModel();

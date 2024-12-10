@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.appailatrieuphu.View.Fragment.M000LoginFrg;
 import com.example.appailatrieuphu.View.Fragment.M001MainFrg;
 import com.example.appailatrieuphu.View.OnMainCallBack;
 import com.example.appailatrieuphu.MediaManager;
@@ -50,7 +51,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
         new Handler().postDelayed(() -> {
             binding.ivLogo.setVisibility(View.GONE);
             binding.progressLoading.setVisibility(View.GONE);
-            showFragment(M001MainFrg.TAG, null, false);
+            showFragment(M000LoginFrg.TAG, null, false);
         }, 2000);
     }
 

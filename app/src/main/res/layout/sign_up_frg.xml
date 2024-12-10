@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign up"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="User name"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/material_dynamic_primary10"
+            android:textColorHint="@color/material_dynamic_primary10"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Password"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/material_dynamic_primary10"
+            android:textColorHint="@color/material_dynamic_primary10"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/bt_back_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#DC45F6"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#DC45F6"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </TableRow>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733687160676",
+    "project_id": "appailatrieuphu",
+    "storage_bucket": "appailatrieuphu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733687160676:android:62d17303e5526123f16471",
+        "android_client_info": {
+          "package_name": "com.example.appailatrieuphu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVKwRnBz-Go_d5k_mzSVTQNWy-hz7OLsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
