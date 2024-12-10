@@ -11,10 +11,11 @@ import com.example.appailatrieuphu.viewmodel.M000MainViewModel;
 
 
 public class M000LoginFrg extends BaseFragment<M000LoginFrgBinding, M000MainViewModel> {
-    public static final String TAG = M001MainFrg.class.getName();
+    public static final String TAG = M000LoginFrg.class.getName();
     @Override
     protected void initView() {
         binding.btLogin.setOnClickListener(this);
+        binding.tvSignUp.setOnClickListener(this);
     }
 
 

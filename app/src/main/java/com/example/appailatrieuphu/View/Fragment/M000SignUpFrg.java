@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.concurrent.Executor;
 
 public class M000SignUpFrg extends BaseFragment<SignUpFrgBinding, M000MainViewModel> {
-    public static final String TAG = M001MainFrg.class.getName();
+    public static final String TAG = M000SignUpFrg.class.getName();
 
     @Override
     protected void initView() {
@@ -32,17 +32,14 @@ public class M000SignUpFrg extends BaseFragment<SignUpFrgBinding, M000MainViewMo
             String pass = binding.edtPass.getText().toString().trim();
             FirebaseAuth mAuth = FirebaseAuth.getInstance();
             mAuth.createUserWithEmailAndPassword(userName, pass)
-                    .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                // Sign in success, update UI with the signed-in user's information
-                                goToMainFragment();
-                            } else {
-                                // If sign in fails, display a message to the user.
-                                Toast.makeText(mContext, "Authentication failed.",
-                                        Toast.LENGTH_SHORT).show();
-                            }
+                    .addOnCompleteListener(requireActivity(), (OnCompleteListener<AuthResult>) task -> {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            goToMainFragment();
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Toast.makeText(mContext, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
                         }
                     });
         }
